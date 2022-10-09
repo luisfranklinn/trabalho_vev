@@ -5,7 +5,7 @@
 > Marcos Gabriel de Mesquita Maurício - marcosgabriel@alu.ufc.br
 > Kauan Deyvid Bezerra de Sousa - kauandeyvid3@gmail.com 
 > Thalles Paiva Souza - thallespaiva4@gmail.com
-# Atividades
+### Atividades
 
 - [ ] Espeficicar Caso de Uso RF01 - Prazo 14/10. 
 - [ ] Espeficicar Caso de Uso RF02 - Prazo 14/10. 
@@ -21,7 +21,7 @@
 > Vinícius de Oliveira Moreira - viniciusmoreira@alu.ufc.br
 > Otávio Noronha Neto - otaviont@alu.ufc.br
 
-# Atividades
+### Atividades
 
 - [ ] Espeficicar Caso de Uso RF03 - Prazo 14/10. 
 - [ ] Espeficicar Caso de Uso RF04 - Prazo 14/10. 
