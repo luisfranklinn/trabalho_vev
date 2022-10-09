@@ -1,10 +1,10 @@
 <h1 align="center">Trabalho de Verificação e Validação</h1>
 
 ## Equipe 1
-> Luis Antonio Viana Franklin - luisfranklin@alu.ufc.br
-> Marcos Gabriel de Mesquita Maurício - marcosgabriel@alu.ufc.br
-> Kauan Deyvid Bezerra de Sousa - kauandeyvid3@gmail.com 
-> Thalles Paiva Souza - thallespaiva4@gmail.com
+- Luis Antonio Viana Franklin - luisfranklin@alu.ufc.br
+- Marcos Gabriel de Mesquita Maurício - marcosgabriel@alu.ufc.br
+- Kauan Deyvid Bezerra de Sousa - kauandeyvid3@gmail.com 
+- Thalles Paiva Souza - thallespaiva4@gmail.com
 ### Atividades
 
 - [ ] Espeficicar Caso de Uso RF01 - Prazo 14/10. 
@@ -17,9 +17,9 @@
 
 ## Equipe 2
 
-> Marcos Augusto Gomes Cunha - marcosgomes19@alu.ufc.br
-> Vinícius de Oliveira Moreira - viniciusmoreira@alu.ufc.br
-> Otávio Noronha Neto - otaviont@alu.ufc.br
+- Marcos Augusto Gomes Cunha - marcosgomes19@alu.ufc.br
+- Vinícius de Oliveira Moreira - viniciusmoreira@alu.ufc.br
+- Otávio Noronha Neto - otaviont@alu.ufc.br
 
 ### Atividades
 
@@ -35,15 +35,15 @@
 
 ## Requisitos do Sistema
 
-> RF01: O sistema deve liberar as funcionalidades com base no tipo de login. - Equipe 2
-> RF02: O sistema deve manter contas. - Equipe 2
-> RF03: O sistema deve manter estoque. - Equipe 1
-> RF04: O sistema deve responder a requisição (compra/gerenciamento) de busca com o ID do produto e sua respectiva quantidade. - Equipe 1
-> RF05: O sistema deve emitir nota fiscal contendo nome do cliente, id do cliente, valor e troca se existir. - Equipe 1
-> RF06: O sistema deve manter o carrinho do cliente. - Equipe 2
+- RF01: O sistema deve liberar as funcionalidades com base no tipo de login. - Equipe 2
+- RF02: O sistema deve manter contas. - Equipe 2
+- RF03: O sistema deve manter estoque. - Equipe 1
+- RF04: O sistema deve responder a requisição (compra/gerenciamento) de busca com o ID do produto e sua respectiva quantidade. - Equipe 1
+- RF05: O sistema deve emitir nota fiscal contendo nome do cliente, id do cliente, valor e troca se existir. - Equipe 1
+- RF06: O sistema deve manter o carrinho do cliente. - Equipe 2
 
 
 ## Regras de Negócio
 
-> RG01: O sistema só deve permitir gerenciamento de conta de funcionários a partir de um funcionário administrador.
-> RG02: O estoque de produtos só pode ser alterado por um login do tipo funcionário.
+- RG01: O sistema só deve permitir gerenciamento de conta de funcionários a partir de um funcionário administrador.
+- RG02: O estoque de produtos só pode ser alterado por um login do tipo funcionário.
