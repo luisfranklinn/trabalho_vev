@@ -16,9 +16,9 @@
 - [x] Espeficicar Caso de Uso RF01 - Prazo 14/10. 
 - [x] Espeficicar Caso de Uso RF02 - Prazo 14/10. 
 - [] Espeficicar Caso de Uso RF06 - Prazo 14/10. 
-- [] Desenvolver Funcionalidade UC03 - Prazo a definir. 
-- [] Desenvolver Funcionalidade UC04 - Prazo a definir. 
-- [] Desenvolver Funcionalidade UC05 - Prazo a definir. 
+- [ ] Desenvolver Funcionalidade UC03 - Prazo a definir. 
+- [ ] Desenvolver Funcionalidade UC04 - Prazo a definir. 
+- [ ] Desenvolver Funcionalidade UC05 - Prazo a definir. 
 
 
 # Equipe 2
