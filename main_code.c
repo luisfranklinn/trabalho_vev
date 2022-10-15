@@ -2,15 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-//Grupo SEV
-//Curso: Engenharia de Software
-//Luis Antonio Viana Franklin - 5141467
-//Ruan Pablo de Sousa Estacio - 509806 
 
-
-
-
-//Estrutura de Dados - RUAN
 typedef struct prod{
     char nome[30];
     float preco;
@@ -32,7 +24,7 @@ int contador_produto = 0;
 Carrinho * topoCarrinho = NULL; 
 int contador_carrinho = 0;
 
-//Função de Busca na Arvore Binária - RUAN
+//Função de Busca na Arvore Binária
 Produto* buscar(int x, Produto *aux){
     if(aux == NULL){
         return NULL; //vazia
@@ -56,7 +48,7 @@ Produto* buscar(int x, Produto *aux){
 // FUNÇÕES DO SISTEMA
 
 // Função Adicionar produto - Função relacionada com a função Casdatrar produto, onde ele cadastra na arvoré o Nome e Preço do produto no sistema,
-//o contador_produto gera os códigos dos produtos - RUAN
+//o contador_produto gera os códigos dos produtos - Equipe 1
 void adicionarProduto(char *nome, float preco, int codigo){
     Produto* aux = buscar(codigo, raizProduto);
     if(aux != NULL && aux->codigo == codigo){
@@ -82,7 +74,7 @@ void adicionarProduto(char *nome, float preco, int codigo){
 
 
 // Função Cadastrar produto - Essa função pede os dados do produto ao usúario(Preço e Nome) e no final
-// passa os dados como parametros para a função adcionar - RUAN
+// passa os dados como parametros para a função adcionar - Equipe 1
 void cadastrarProduto(){ 
     char produto[30] = "\0";
     float preco = 0.0;
@@ -104,7 +96,7 @@ void cadastrarProduto(){
     adicionarProduto(produto, preco, contador_produto);}
 
 
-// Função Imprimir - Associada a função de listar Produtos, ela faz a impressão da arvore em in_order - RUAN
+// Função Imprimir - Associada a função de listar Produtos, ela faz a impressão da arvore em in_order - Equipe 1
 void imprimir_em_ordem(Produto *aux){
     if(aux->esq != NULL){
         imprimir_em_ordem(aux->esq);
@@ -117,7 +109,7 @@ void imprimir_em_ordem(Produto *aux){
 
 
 // Função listar produtos - Função chamada no menu, faz a verificação se existem produtos cadastrados na arvore, se existir
-//chama a função imprimir_em_ordem(), caso o contrario avisa ao cliente que não tem produtos cadastrados  - RUAN
+//chama a função imprimir_em_ordem(), caso o contrario avisa ao cliente que não tem produtos cadastrados  - Equipe 1
 void listarProdutos(){ 
 	if(contador_produto > 0){
 		Produto * aux;
@@ -132,7 +124,7 @@ void listarProdutos(){
 
 
 // Função adicionar ao carrinho, assim que o usuario realiza a escolha do seu produto, essa função insere o produto a partir de
-//uma verificaçao do código, assim, a função adciona o produto dentro de uma pilha. - LUIS
+//uma verificaçao do código, assim, a função adciona o produto dentro de uma pilha. - Equipe 2
 void adicionarCarrinho(Produto prod, int qtd){
     Carrinho *carrin = (Carrinho*) malloc (sizeof (Carrinho));
     Carrinho * aux;
@@ -161,7 +153,7 @@ void adicionarCarrinho(Produto prod, int qtd){
 
 
 //Função Comprar - Associada a função adicionar carrinho, ela é resposavel por pegar o código e a quantidade do produto que o cliente
-//deseja comprar, verifica se o produto existe, se existir manda para função adicionarCarrinho(), se não informa que o produto não existe  - LUIS
+//deseja comprar, verifica se o produto existe, se existir manda para função adicionarCarrinho(), se não informa que o produto não existe  - Equipe 2
 void comprar(){ 
     int opcao;
     if (contador_produto > 0){
@@ -201,12 +193,12 @@ void comprar(){
         }
     }else{
         printf("Ainda nao temos produto cadastrado.\n");
-        menu();
+        login();
     }
 }
 
 
-//Função limpar Carrinho - Zera o carrinho assim que o cliente finaliza a compra - LUIS
+//Função limpar Carrinho - Zera o carrinho assim que o cliente finaliza a compra - Equipe 2
 int limparCarrinho(){
     Carrinho * aux = topoCarrinho;
     for(aux = topoCarrinho; aux != NULL; aux = aux->prox){
@@ -218,7 +210,7 @@ int limparCarrinho(){
 }
 
 
-//Função Remover do Carrinho - Remove itens que o cliente não deseja mais comprar - LUIS
+//Função Remover do Carrinho - Remove itens que o cliente não deseja mais comprar - Equipe 2
 void removerCarrinho(){
     if ( contador_carrinho > 0 ){
         int codigin = 0;
@@ -286,7 +278,7 @@ void removerCarrinho(){
 }
 
 
-//Função Gerar Nota - Essa função imprime a nota fiscal em forma de arquivo - LUIS
+//Função Gerar Nota - Equipe 1
 void gerarNota(float troco, float pago){ 
     FILE *arquivo;
     Carrinho * aux;
@@ -377,17 +369,17 @@ void fecharPedido(){
         }while(opcao < 1 || opcao > 3);
 	}else{
 		printf("Nao temos ainda produtos cadastrados.\n");
-        menu();
+        login();
 	}
 }
 
 
 
-// Funções de Usuarios do sistema
+// Funções de Usuarios do sistema - Equipe 2 (ALTERAR PARA SE ADEQUAR NO UC01) 
 void cliente(){
     comprar();}
 
-void funcionario(){ // - LEANDRO
+void funcionario(){
     int opcao;
 
     printf("O que deseja fazer?\n");
@@ -416,12 +408,12 @@ void funcionario(){ // - LEANDRO
 
     case 3:
         printf("\nVoltando ao menu de login...\n\n");
-        menu();
+        login();
         break;}}
 
 
-//Função Menu -  Chama o menu de login   - VITORIA    
-void menu(){ 
+//Função login - Equipe 2 (ALTERAR PARA SE ADEQUAR NO UC01)  
+void login(){ 
     int opcao = 1;
         printf("\n=======================================\n");
         printf("==============   SEV   ================\n");
@@ -472,5 +464,5 @@ int main(){
     adicionarProduto("Queijo",2,contador_produto);
     adicionarProduto("Pao",0.25,contador_produto);
     adicionarProduto("Presunto",3,contador_produto);
-    menu();
+    login();
 }
