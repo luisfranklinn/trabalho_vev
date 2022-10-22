@@ -2,7 +2,6 @@
 #include <stdlib.h>
 #include <string.h>
 
-
 typedef struct prod{
     char nome[30];
     int quantidade_prod;
@@ -15,33 +14,9 @@ typedef struct prod{
 Produto *raizProduto = NULL;
 int codigo = 1;
 
-//Função de Busca na Arvore Binária
-Produto* buscar(int x, Produto *aux){
-    if(aux == NULL){
-        return NULL; //vazia
-    }else if (x == aux->codigo){
-        return aux;
-    }else if(x < aux->codigo){ //esq
-        if(aux->esq == NULL){
-            return aux;
-        }else{
-            return buscar(x, aux->esq);
-        }
-    }else{ //dir
-        if(aux->dir == NULL){
-            return aux;
-        }else{
-            return buscar(x, aux->dir);
-        }
-    }
-}
-
-// FUNÇÕES DO SISTEMA
-
-// Função Adicionar produto - Função relacionada com a função Casdatrar produto, onde ele cadastra na arvoré o Nome e Preço do produto no sistema,
-//o codigo gera os códigos dos produtos - Equipe 1
-void adicionarProduto(char *nome, int quantidade_prod, float preco){
-    Produto* aux = buscar(codigo, raizProduto);
+// Manter Produtos
+void cadastrar_Produto(char *nome, int codigo,int quantidade_prod, float preco){
+    Produto* aux = buscar_Prod(codigo, raizProduto);
     if(aux != NULL && aux->codigo == codigo){
         printf("insercao invalida!\n");
     }else{
@@ -59,12 +34,40 @@ void adicionarProduto(char *nome, int quantidade_prod, float preco){
         }else{ //dir
             aux->dir = novo;
         }
-        codigo++;
     }
 }
 
+void adicionar_Produto(){ 
+    char nome[30] = "\0";
+    int codigo = 0;
+    int quantidade_prod = 0;
+    float preco = 0.0;
+    printf("===============================\n");   
+    printf("      Cadastro de Produto\n");
+    printf("===============================\n");
+
+    printf("Informe o nome do produto: ");
+    fflush(stdin);
+    scanf("%s", nome);
+
+    printf("Informe o codigo do produto: ");
+    fflush(stdin);
+    scanf("%d", &codigo);
+
+    printf("Informe a quantidade do produto: ");
+    scanf("%d", &quantidade_prod);
+    printf("-------------------------------\n");
+
+    printf("Informe o preco do produto: ");
+    scanf("%f", &preco);
+    printf("-------------------------------\n");
+
+    printf("\nAdcionado ao sistema! -> Produto: %s | Cod: %d | Qtd: %d | Preco: R$%.2f \n", nome,codigo, quantidade_prod, preco);
+    printf("----------------------------------------------------------\n");
+    cadastrar_Produto(nome, codigo, quantidade_prod, preco);}
+
 Produto* remover_produto_quantidade(Produto *codigo, int quantidade_rem){ // Equipe 1
-    Produto* aux = buscar(codigo, raizProduto);
+    Produto* aux = buscar_Prod(codigo, raizProduto);
     if(aux != NULL && aux->codigo == codigo){
         if (quantidade_rem < aux->quantidade_prod){
             aux->quantidade_prod = aux->quantidade_prod - quantidade_rem;}
@@ -95,46 +98,49 @@ Produto* remover_produto_estoque(Produto *raizProduto, int codigo) { // Equipe 1
     }
 }
 
+void remover_Produto(){ 
+    int codigo;
+    printf("===============================\n");   
+    printf("      Remocao de Produto\n");
+    printf("===============================\n");
 
-void imprimir_em_ordem(Produto *aux){
+    listar_Produtos();
+
+    printf("Informe o codigo do produto que deseja remover: ");
+    fflush(stdin);
+    scanf("%d", &codigo);
+
+    Produto* aux = buscar_Prod(codigo, raizProduto);
+    while (aux->codigo == NULL){ 
+        printf("Informe um codigo válido: ");
+        fflush(stdin);
+        scanf("%d", &codigo);
+        Produto* aux = buscar_Prod(codigo, raizProduto);
+    }
+    remover_produto_estoque(raizProduto,codigo);
+}
+
+void imprimir_Produtos(Produto *aux){
     if(aux->esq != NULL){
-        imprimir_em_ordem(aux->esq);
+        imprimir_Produtos(aux->esq);
     }
     printf("\n%-5.3d  %-25s %-14d  %.2f", aux->codigo, aux->nome,aux->quantidade_prod, aux->preco);
     if(aux->dir != NULL){
-        imprimir_em_ordem(aux->dir);
+        imprimir_Produtos(aux->dir);
     }
 }
 
-
-
-
-// Função listar produtos - Função chamada no menu, faz a verificação se existem produtos cadastrados na arvore, se existir
-//chama a função imprimir_em_ordem(), caso o contrario avisa ao cliente que não tem produtos cadastrados  - Equipe 1
-void listarProdutos(){ 
+void listar_Produtos(){ 
+    printf("===============================================\n");
+    printf("            Produtos disponiveis               \n");
+    printf("===============================================\n");
 	if(codigo > 0){
 		Produto * aux;
         printf("\n%-5s  %-20s %-20s %s", "Cod","Produto","Quantidade","Preco");
         printf("\n--------------------------------------------------------");
-        imprimir_em_ordem(raizProduto);
+        imprimir_Produtos(raizProduto);
 	}else{
 		printf("Nao temos produtos disponiveis no momento :(\n");
 	}
     printf("\n--------------------------------------------------------\n");
-}
-
-
-
-
-
-int main(){
-
-    adicionarProduto("Leite",5, 10);
-    adicionarProduto("Queijo",2,5);
-    adicionarProduto("Pao",1,0.25);
-    adicionarProduto("Presunto",3,5);
-    remover_produto_estoque(raizProduto,2);
-    remover_produto_quantidade(1, 3);
-    listarProdutos();
-    
 }
