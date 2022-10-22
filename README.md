@@ -14,11 +14,11 @@
 ### Atividades
 
 - [x] Espeficicar Caso de Uso RF01 - Prazo 14/10. 
-- [ ] Espeficicar Caso de Uso RF02 - Prazo 14/10. 
-- [ ] Espeficicar Caso de Uso RF06 - Prazo 14/10. 
-- [ ] Desenvolver Funcionalidade UC03 - Prazo 23/10.
-- [ ] Desenvolver Funcionalidade UC04 - Prazo 23/10.
-- [ ] Desenvolver Funcionalidade UC05 - Prazo 23/10.
+- [x] Espeficicar Caso de Uso RF02 - Prazo 14/10. 
+- [x] Espeficicar Caso de Uso RF06 - Prazo 14/10. 
+- [x] Desenvolver Funcionalidade UC03 - Prazo 23/10.
+- [x] Desenvolver Funcionalidade UC04 - Prazo 23/10.
+- [x] Desenvolver Funcionalidade UC05 - Prazo 23/10.
 
 
 # Equipe 2
@@ -32,9 +32,9 @@
 - [x] Espeficicar Caso de Uso RF03 - Prazo 14/10. 
 - [x] Espeficicar Caso de Uso RF04 - Prazo 14/10. 
 - [x] Espeficicar Caso de Uso RF05 - Prazo 14/10. 
-- [ ] Desenvolver Funcionalidades UC01 - Prazo 23/10.
-- [ ] Desenvolver Funcionalidades UC02 - Prazo 23/10.
-- [ ] Desenvolver Funcionalidades UC06 - Prazo 23/10.
+- [x] Desenvolver Funcionalidades UC01 - Prazo 23/10.
+- [x] Desenvolver Funcionalidades UC02 - Prazo 23/10.
+- [x] Desenvolver Funcionalidades UC06 - Prazo 23/10.
 
 
 
@@ -53,3 +53,7 @@
 
 - RG01: O sistema só deve permitir gerenciamento de conta de funcionários a partir de um funcionário administrador.
 - RG02: O estoque de produtos só pode ser alterado por um login do tipo funcionário.
+- RG03: O cont_type do funcionário ADM deve ser do tipo inteiro com valor igual a  1.
+- RG04: O cont_type do funcionário Comum deve ser do tipo inteiro com valor igual a  2.
+- RG05: O cont_type do Cliente deve ser do tipo inteiro com valor igual a  3.
+
