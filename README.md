@@ -1,6 +1,6 @@
 <h1 align="center">Trabalho de Verificação e Validação</h1>
 
-![Status](https://img.shields.io/badge/Status-Desenvolvimento-brightgreen)
+![Status](https://img.shields.io/badge/Status-Finalizado-brightgreen)
 ![Language](https://img.shields.io/github/languages/top/luisfranklinn/trabalho_vev)
 ![](https://img.shields.io/github/last-commit/luisfranklinn/trabalho_vev)
 
