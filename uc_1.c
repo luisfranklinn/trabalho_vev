@@ -109,7 +109,7 @@ void login(){
     int opcao = 1;
 
         printf("-----------------------------------------------------\n");
-        printf("-------------------BUGEDA DO SEU ZÉ------------------\n");
+        printf("--------------------MERCADO BIG BOM------------------\n");
         printf("-----------------------------------------------------\n");
         printf("                    OPCOES DE LOGIN\n\n");
         printf("     [1]Criar uma Conta     |     [2]Fazer Login\n");
@@ -120,7 +120,7 @@ void login(){
 
         while (opcao < 1 || opcao > 3) {
             printf("               !!OPCAO INVALIDA!!\n\n");
-            printf(" [1]Criar uma Conta     |    [2]FFazer Login\n");
+            printf(" [1]Criar uma Conta     |    [2]Fazer Login\n");
             printf("                    [3]SAIR\n\n");
             printf("O que deseja fazer?: ");
             scanf("%d",&opcao);}

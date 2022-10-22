@@ -82,7 +82,6 @@ Produto* remover_produto_estoque(Produto *raizProduto, int codigo) { // Equipe 1
             // remove nós folhas (nós sem filhos)
             if(raizProduto->esq == NULL && raizProduto->dir == NULL) {
                 free(raizProduto);
-                printf("Elemento folha removido: %d !\n", codigo);
                 return NULL;
             }
             else{

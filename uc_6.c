@@ -257,9 +257,9 @@ void fechar_Pedido(int id){
                 if (troco > 0){
                     printf("\nSeu troco e de R$%.2f", troco);
                 }
+                gerar_Nota(id, troco, pagamento);
                 esvaziar_Carrinho();
                 contador_carrinho = 0;
-                gerar_Nota(id, troco, pagamento);
                 printf("\nCompra finalizada!\nSua nota fiscal foi gerada :P\nObrigado pela preferencia!\n");
                 break;
 
