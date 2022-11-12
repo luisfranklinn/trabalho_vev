@@ -7,9 +7,10 @@
 
 # Equipe 1
 
-- Marcos Augusto Gomes Cunha - marcosgomes19@alu.ufc.br
-- Vinícius de Oliveira Moreira - viniciusmoreira@alu.ufc.br
-- Otávio Noronha Neto - otaviont@alu.ufc.br
+- Luis Antonio Viana Franklin - luisfranklin@alu.ufc.br
+- Marcos Gabriel de Mesquita Maurício - marcosgabriel@alu.ufc.br
+- Kauan Deyvid Bezerra de Sousa - kauandeyvid3@gmail.com 
+- Thalles Paiva Souza - thallespaiva4@gmail.com
 
 ### Atividades
 
@@ -19,17 +20,18 @@
 - [x] Desenvolver Funcionalidades UC01 - Prazo 23/10.
 - [x] Desenvolver Funcionalidades UC02 - Prazo 23/10.
 - [x] Desenvolver Funcionalidades UC06 - Prazo 23/10.
-- [ ] Testar Caso de Uso RF03 - Prazo . 
-- [ ] Testar Caso de Uso RF04 - Prazo . 
-- [ ] Testar Caso de Uso RF05 - Prazo . 
+- [ ] Testar Caso de Uso RF03 - Relator: Luis.
+- [ ] Testar Caso de Uso RF04 - Relator: Kauan.
+- [ ] Testar Caso de Uso RF05 - .
 
 
 
 # Equipe 2
-- Luis Antonio Viana Franklin - luisfranklin@alu.ufc.br
-- Marcos Gabriel de Mesquita Maurício - marcosgabriel@alu.ufc.br
-- Kauan Deyvid Bezerra de Sousa - kauandeyvid3@gmail.com 
-- Thalles Paiva Souza - thallespaiva4@gmail.com
+
+- Marcos Augusto Gomes Cunha - marcosgomes19@alu.ufc.br
+- Vinícius de Oliveira Moreira - viniciusmoreira@alu.ufc.br
+- Otávio Noronha Neto - otaviont@alu.ufc.br
+
 ### Atividades
 
 - [x] Espeficicar Caso de Uso RF01 - Prazo 14/10. 
@@ -38,9 +40,9 @@
 - [x] Desenvolver Funcionalidade UC03 - Prazo 23/10.
 - [x] Desenvolver Funcionalidade UC04 - Prazo 23/10.
 - [x] Desenvolver Funcionalidade UC05 - Prazo 23/10.
-- [ ] Testar Caso de Uso RF01 - Prazo . 
-- [ ] Testar Caso de Uso RF02 - Prazo . 
-- [ ] Testar Caso de Uso RF06 - Prazo . 
+- [ ] Testar Caso de Uso RF01 - Relator: Vinícius.
+- [ ] Testar Caso de Uso RF02 - Relator: Otávio.
+- [ ] Testar Caso de Uso RF06 - Relator: Marcos Augusto.
 
 
 
