@@ -6,7 +6,7 @@
 
 
 
-# Equipe 1
+# Equipe 2
 - Luis Antonio Viana Franklin - luisfranklin@alu.ufc.br
 - Marcos Gabriel de Mesquita Maurício - marcosgabriel@alu.ufc.br
 - Kauan Deyvid Bezerra de Sousa - kauandeyvid3@gmail.com 
@@ -21,7 +21,7 @@
 - [x] Desenvolver Funcionalidade UC05 - Prazo 23/10.
 
 
-# Equipe 2
+# Equipe 1
 
 - Marcos Augusto Gomes Cunha - marcosgomes19@alu.ufc.br
 - Vinícius de Oliveira Moreira - viniciusmoreira@alu.ufc.br
