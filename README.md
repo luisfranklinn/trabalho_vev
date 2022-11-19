@@ -19,10 +19,10 @@
 - [x] Espeficicar Caso de Uso RF05 - Prazo 14/10. 
 - [x] Desenvolver Funcionalidades UC01 - Prazo 23/10.
 - [x] Desenvolver Funcionalidades UC02 - Prazo 23/10.
-- [x] Desenvolver Funcionalidades UC06 - Prazo 23/10.
+- [x] Desenvolver Funcionalidades UC05 - Prazo 23/10.
 - [ ] Testar Caso de Uso RF03 - Relator: Luis.
 - [ ] Testar Caso de Uso RF04 - Relator: Kauan.
-- [ ] Testar Caso de Uso RF05 - .
+- [ ] Testar Caso de Uso RF06 - .
 
 
 
@@ -39,10 +39,10 @@
 - [x] Espeficicar Caso de Uso RF06 - Prazo 14/10. 
 - [x] Desenvolver Funcionalidade UC03 - Prazo 23/10.
 - [x] Desenvolver Funcionalidade UC04 - Prazo 23/10.
-- [x] Desenvolver Funcionalidade UC05 - Prazo 23/10.
+- [x] Desenvolver Funcionalidade UC06 - Prazo 23/10.
 - [ ] Testar Caso de Uso RF01 - Relator: Vinícius.
 - [ ] Testar Caso de Uso RF02 - Relator: Otávio.
-- [ ] Testar Caso de Uso RF06 - Relator: Marcos Augusto.
+- [ ] Testar Caso de Uso RF05 - Relator: Marcos Augusto.
 
 
 
@@ -52,8 +52,9 @@
 - RF02: O sistema deve manter contas.
 - RF03: O sistema deve manter estoque. 
 - RF04: O sistema deve responder a requisição (compra/gerenciamento) de busca com o ID do produto e sua respectiva quantidade.
-- RF05: O sistema deve emitir nota fiscal contendo nome do cliente, id do cliente, valor e troca se existir. 
-- RF06: O sistema deve manter o carrinho do cliente.
+- RF05: O sistema deve manter o carrinho do cliente
+- RF06: O sistema deve emitir nota fiscal contendo nome do cliente, id do cliente, valor e troca se existir. 
+
 
 
 # Regras de Negócio
