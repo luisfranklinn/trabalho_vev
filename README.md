@@ -20,9 +20,9 @@
 - [x] Desenvolver Funcionalidades UC01 - Prazo 23/10.
 - [x] Desenvolver Funcionalidades UC02 - Prazo 23/10.
 - [x] Desenvolver Funcionalidades UC05 - Prazo 23/10.
-- [ ] Testar Caso de Uso RF03 - Relator: Luis.
-- [ ] Testar Caso de Uso RF04 - Relator: Kauan.
-- [ ] Testar Caso de Uso RF06 - .
+- [x] Testar Caso de Uso RF03 - Relator: Luis.
+- [x] Testar Caso de Uso RF04 - Relator: Kauan.
+- [x] Testar Caso de Uso RF06 - .
 
 
 
